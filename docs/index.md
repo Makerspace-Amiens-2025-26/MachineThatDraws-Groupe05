@@ -38,4 +38,4 @@ Ici vous publierez le poster de votre projet.
 Ici vous publierez la vidéo de votre projet. 
 
 
-<video src="video-premiere-partie" controls title="Vidéo présentation MTDG5" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;"></video>
+<video src="/images/video-premiere-partie.mp4" controls title="Vidéo présentation MTDG5" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;"></video>
