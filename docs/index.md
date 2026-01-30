@@ -36,12 +36,6 @@ Ici vous publierez le poster de votre projet.
 ## Vidéo
 
 Ici vous publierez la vidéo de votre projet. 
-- 1min30 au format vertical
-- Présentation du projet 
-- Des explication du fonctionnement du projet
-- Des vues du projet / Prototype / Application etc... 
-- Des plans du fonctionnement (même basique ou des éléments séparés)
-- Une conclusion
-- Si en stockage local : <50mo
+
 
 <video src="video-premiere-partie" controls title="Vidéo présentation MTDG5" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;"></video>
