@@ -1,0 +1,71 @@
+/* Dégradé principal animé sur le fond */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.main-content-wrap, .main-content, .side-bar {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+h1, h2, h3 {
+  background: linear-gradient(90deg, #ff6b6b 0%, #ee5a6f 20%, #c44569 40%, #5f27cd 60%, #00d2ff 80%, #3742fa 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text 3s linear infinite;
+  font-weight: 700;
+}
+
+@keyframes gradient-text {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.btn, .btn-primary {
+  background: linear-gradient(45deg, #667eea, #764ba2) !important;
+  border: none !important;
+  color: white !important;
+  padding: 12px 30px !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+}
+
+img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+video, iframe {
+  border-radius: 15px !important;
+  box-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+  border: 3px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+video:hover, iframe:hover {
+  box-shadow: 0 0 50px rgba(102, 126, 234, 0.8);
+}
