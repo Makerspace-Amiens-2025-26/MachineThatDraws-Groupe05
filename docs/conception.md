@@ -10,7 +10,7 @@ Ce document retrace le cycle de développement de notre projet, de la réflexion
 ---
 
 ##  1. Étude préliminaire et schématisation
-Avant de passer à la modélisation 3D, nous avons défini le fonctionnement global du robot par une phase de **brainstorming**. 
+Avant de passer à la modélisation 3D, nous avons défini le fonctionnement global du robot. 
 * **Objectif :** Valider l'emplacement des composants .
 * **Résultat :** Des schémas de principe qui ont servi de base solide avant de lancer la conception sur logiciel .
 

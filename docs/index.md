@@ -9,12 +9,10 @@ permalink: /
  
 Bienvenue dans la documentation du projet MTDG5. Ce site a pour but de fournir toutes les informations nécessaires pour comprendre, utiliser et reproduire efficacement notre projet.   
 
-[Notre projet sur Onshape](https://cad.onshape.com/documents/2860ed3d58f1b518e6857770/w/82b3c0e474623135ccb76fa3/e/0cab16137cd459ee83ebe56e?renderMode=0&uiState=6936dc0e23fecc27d34268b2){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Notre projet sur Onshape](https://cad.onshape.com/documents/4a16ed69ab4cbdc5e629644e/w/ca76e80a4248e75e4d5e2bbc/e/b6e8ab27ce93317d6a700989){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Notre repo GitHub](https://github.com/Makerspace-Amiens/template-project){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-<iframe height="600" width="100%" src="https://modelembedder.net/embed?did=2860ed3d58f1b518e6857770&wvm=v&wvmid=6280fca954e7770df59e5a2f&eid=0cab16137cd459ee83ebe56e&elementType=ASSEMBLY" frameborder="0"></iframe>
-{: .warning }
->Pour intégrer la visualisation de votre projet Onshape, utilisez le site [https://modelembedder.net](https://modelembedder.net) . Activez le partage par lien via l'outil de partage de Onshape. n'oubliez pas d'activer l'option "export". Puis completez l'iframe ci-dessus avec le lien généré par le site [https://modelembedder.net](https://modelembedder.net). Vous pouvez mettre à jour également le bouton avec le lien de partage de votre modèle.
+<iframe height="600" width="100%" src="https://modelembedder.net/embed?did=4a16ed69ab4cbdc5e629644e&wvm=w&wvmid=ca76e80a4248e75e4d5e2bbc&eid=b6e8ab27ce93317d6a700989&elementType=PARTSTUDIO" frameborder="0"></iframe>
 
 
 ## À propos du Projet   
