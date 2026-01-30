@@ -44,4 +44,4 @@ Ici vous publierez la vidéo de votre projet.
 - Une conclusion
 - Si en stockage local : <50mo
 
-<video src="video-premiere-partie.mp4" controls title="Vidéo présentation MTDG5" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;"></video>
+<video src="video-premiere-partie" controls title="Vidéo présentation MTDG5" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;"></video>
