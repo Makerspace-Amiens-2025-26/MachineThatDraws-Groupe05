@@ -3976,6 +3976,10 @@
 		(uuid "1ba8c399-74c7-4885-adbb-3676ab55b2e1")
 	)
 	(no_connect
+		(at 143.51 129.54)
+		(uuid "522a07de-860c-4937-bbea-113d6b804c18")
+	)
+	(no_connect
 		(at 144.78 106.68)
 		(uuid "56ff9f34-8dc3-4b5a-b8f4-f260899442e7")
 	)
@@ -3998,10 +4002,6 @@
 	(no_connect
 		(at 248.92 26.67)
 		(uuid "743d87ec-dcf5-4130-ac57-41fda7ed5059")
-	)
-	(no_connect
-		(at 195.58 140.97)
-		(uuid "76bb9eeb-90ec-4b75-aabe-a30ce3fa906c")
 	)
 	(no_connect
 		(at 195.58 133.35)
@@ -5589,6 +5589,28 @@
 			)
 		)
 	)
+	(global_label "SERVO"
+		(shape input)
+		(at 195.58 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "52346e29-0681-4fd5-9944-6959bbb62251")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.6128 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CS_SD"
 		(shape input)
 		(at 144.78 132.08 180)
@@ -5690,28 +5712,6 @@
 		(uuid "9375d25c-6bea-415f-85a6-7f81f76b823c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 222.2282 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SERVO"
-		(shape input)
-		(at 143.51 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "95b35871-8882-478f-a64e-24cca5f292a5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.4772 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
