@@ -3836,6 +3836,12 @@
 		(uuid "f4c03949-969e-490c-ae73-7b7e4db35abd")
 	)
 	(junction
+		(at 247.65 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0457267a-c765-4ca2-8070-527ef67162ad")
+	)
+	(junction
 		(at 163.83 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3976,8 +3982,8 @@
 		(uuid "1ba8c399-74c7-4885-adbb-3676ab55b2e1")
 	)
 	(no_connect
-		(at 143.51 129.54)
-		(uuid "522a07de-860c-4937-bbea-113d6b804c18")
+		(at 195.58 140.97)
+		(uuid "34305943-0e0b-4ad4-b365-39e91f5b9750")
 	)
 	(no_connect
 		(at 144.78 106.68)
@@ -4000,8 +4006,8 @@
 		(uuid "7208bca3-0d85-4b2c-869a-a8976c6790a9")
 	)
 	(no_connect
-		(at 248.92 26.67)
-		(uuid "743d87ec-dcf5-4130-ac57-41fda7ed5059")
+		(at 143.51 129.54)
+		(uuid "7e3d52e6-57f4-4f1c-b2a2-ce9fb9826781")
 	)
 	(no_connect
 		(at 195.58 133.35)
@@ -4022,10 +4028,6 @@
 	(no_connect
 		(at 195.58 109.22)
 		(uuid "cfd9011e-4be9-4988-a38e-874f0684e920")
-	)
-	(no_connect
-		(at 195.58 128.27)
-		(uuid "e89329e5-5c69-4ab5-abab-9a066275b282")
 	)
 	(wire
 		(pts
@@ -4086,6 +4088,16 @@
 			(type default)
 		)
 		(uuid "08a0b17b-834d-410a-9b25-36c65e38560f")
+	)
+	(wire
+		(pts
+			(xy 248.92 26.67) (xy 247.65 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a28b0dd-0b83-4b62-8bba-94ed53caeafc")
 	)
 	(wire
 		(pts
@@ -4326,6 +4338,16 @@
 			(type default)
 		)
 		(uuid "30b3c1ab-6802-455d-821d-c04b81c7b9c6")
+	)
+	(wire
+		(pts
+			(xy 247.65 29.21) (xy 248.92 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "311b38a0-06d8-4174-88a5-8d13cff79312")
 	)
 	(wire
 		(pts
@@ -4979,6 +5001,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 30.48) (xy 247.65 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf31dd4e-9e8e-4363-a2c4-1c7b85f9c394")
+	)
+	(wire
+		(pts
 			(xy 40.64 50.8) (xy 40.64 48.26)
 		)
 		(stroke
@@ -5309,6 +5341,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 26.67) (xy 247.65 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa613424-e52c-483c-962e-9a8309e28abf")
+	)
+	(wire
+		(pts
 			(xy 152.4 93.98) (xy 156.21 93.98)
 		)
 		(stroke
@@ -5431,6 +5473,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS_SD"
+		(shape input)
+		(at 195.58 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2240f737-e111-46ed-a702-0f1babb22e32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.4918 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5589,50 +5653,6 @@
 			)
 		)
 	)
-	(global_label "SERVO"
-		(shape input)
-		(at 195.58 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52346e29-0681-4fd5-9944-6959bbb62251")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 204.6128 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS_SD"
-		(shape input)
-		(at 144.78 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "753146f7-1ec9-425d-850f-de52deffa354")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8682 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MISO"
 		(shape input)
 		(at 144.78 109.22 180)
@@ -5767,22 +5787,22 @@
 	)
 	(global_label "SCK"
 		(shape input)
-		(at 195.58 143.51 0)
+		(at 144.78 132.08 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "a3f74212-5840-4335-a9bc-5a5c9d73051d")
+		(uuid "af88528d-bcf2-46ca-b118-b3a5d01bdf4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.3147 143.51 0)
+			(at 138.0453 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5871,6 +5891,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SERVO"
+		(shape input)
+		(at 195.58 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c5d5e9e4-3927-4bca-be9f-6085b5fbf9c5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.6128 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6561,7 +6603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+		(property "Footprint" "Fuse:Fuseholder_Blade_Mini_Keystone_3568"
 			(at 236.22 26.67 0)
 			(effects
 				(font
@@ -9797,7 +9839,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 248.92 29.21 0)
+		(at 247.65 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9806,7 +9848,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ea1f3e1-3713-4a69-a140-2f01b3069e68")
 		(property "Reference" "#PWR033"
-			(at 248.92 35.56 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9815,7 +9857,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 34.29 0)
+			(at 247.65 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9823,7 +9865,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 29.21 0)
+			(at 247.65 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 29.21 0)
+			(at 247.65 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9841,7 +9883,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 29.21 0)
+			(at 247.65 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9929,16 +9971,16 @@
 	)
 	(symbol
 		(lib_id "makerspace-unilasalle:Barrel_Jack_Switch")
-		(at 256.54 26.67 180)
+		(at 256.54 26.67 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "864e1a05-d592-4867-a3ef-73b558c2d592")
 		(property "Reference" "J2"
-			(at 262.89 25.3999 0)
+			(at 262.89 27.9401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9947,7 +9989,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 262.89 27.9399 0)
+			(at 262.89 25.4001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9955,8 +9997,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal"
-			(at 255.27 25.654 0)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 255.27 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9965,7 +10007,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 25.654 0)
+			(at 255.27 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
