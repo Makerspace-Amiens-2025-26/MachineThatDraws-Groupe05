@@ -285,7 +285,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "V.2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -692,16 +692,16 @@
       {
         "filename": "carte elec.kicad_sch",
         "name": "carte elec",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "5322cc9e-4c98-470d-aa6a-33f85d37d769"
       }
     ],
-    "used_designators": "",
+    "used_designators": "left1,down1,right1,#PWR69",
     "variants": []
   },
   "sheets": [
     [
       "5322cc9e-4c98-470d-aa6a-33f85d37d769",
-      "Root"
+      "carte elec"
     ]
   ],
   "text_variables": {},
