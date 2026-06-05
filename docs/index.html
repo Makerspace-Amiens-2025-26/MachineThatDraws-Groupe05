@@ -4,44 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MTDG5 — Documentation Projet</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js?module","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
 </head>
 <body>
-<a href="#main" class="skip-link">Aller au contenu</a>
 
-<header class="site-header" id="site-header">
-  <div class="header-inner">
-    <a href="home.html" class="site-logo" aria-label="MTDG5 Accueil">
-      <div class="logo-mark">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M2 9 L9 2 L16 9 L9 16 Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-          <circle cx="9" cy="9" r="2.5" fill="white"/>
-        </svg>
-      </div>
-      <div>
-        <div class="logo-text">MTDG5</div>
-        <div class="logo-sub">Machines That Draw</div>
-      </div>
-    </a>
-    <nav class="tab-menu" id="tab-menu" role="navigation">
-      <a href="home.html" class="tab-link">Home</a>
-      <a href="introduction.html" class="tab-link">Introduction</a>
-      <a href="etude technique.html" class="tab-link">Etudes techniques</a>
-      <a href="concep.html" class="tab-link">Conception</a>
-      <a href="fab.html" class="tab-link">Fabrication</a>
-      <a href="elec.html" class="tab-link">Électronique</a>
-      <a href="video.html" class="tab-link">Vidéo</a>
-    </nav>
-    <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="tab-menu">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div class="logo-text">MTDG5</div>
+          <div class="logo-sub">Machines That Draw</div>
+        </div>
+      </a>
+  <nav aria-label="Navigation principale">
+        <ul class="tab-menu" id="tab-menu">
+          <li><a href="index.html" class="tab-link  active">Accueil</a></li>
+          <li><a href="introduction.html" class="tab-link">Introduction</a></li>
+          <li><a href="etude-technique.html" class="tab-link">Étude technique</a></li>
+          <li class="tab-dropdown">
+            <a href="choix-technique.html" class="tab-link">Choix technique <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="choix-technique.html" class="dropdown-item">Choix technique</a></li>
+              <li><a href="choix-technique-mecanique.html" class="dropdown-item">Choix mécanique</a></li>
+              <li><a href="choix-technique-electrique.html" class="dropdown-item">Choix électronique</a></li>
+            </ul>
+          </li>
+          <li class="tab-dropdown">
+            <a href="conception-globale.html" class="tab-link">Conception globale <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="conception-globale.html" class="dropdown-item">Conception globale</a></li>
+              <li><a href="conception-mecanique.html" class="dropdown-item">Conception mécanique</a></li>
+              <li><a href="conception-electrique.html" class="dropdown-item">Conception électronique</a></li>
+            </ul>
+          </li>
+          <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+          <li><a href="video.html" class="tab-link">Conclusion</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le mode sombre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
 
 <main id="main">
   <!-- Hero -->
@@ -62,7 +75,7 @@
   </div>
 
   <!-- Cards -->
-  <div class="page-content" style="padding-top:0">
+  <div class="page-content2" style="padding-top:0">
     <div class="kiosk-grid">
       <div class="kiosk-card reveal">
         <h2>À propos du projet</h2>
@@ -90,9 +103,17 @@
       </div>
     </div>
   </div>
-      <div class="video-container">
-      <video src="images/video.mp4" controls title="Vidéo présentation MTDG5">
-      </video>
+         <div class="videos-duo reveal">
+      <div class="video-item">
+        <video controls autoplay muted loop playsinline>
+          <source src="images/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <video controls muted loop playsinline>
+          <source src="images/MTD Groupe 5.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 </main>
 

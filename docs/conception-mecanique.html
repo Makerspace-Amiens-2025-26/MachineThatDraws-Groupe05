@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Conception mécanique — MTDG5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <div class="logo-mark">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div>
+            <div class="logo-text">MTDG5</div>
+            <div class="logo-sub">Machines That Draw</div>
+          </div>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="tab-menu" id="tab-menu">
+            <li><a href="index.html" class="tab-link">Accueil</a></li>
+            <li>
+              <a href="introduction.html" class="tab-link">Introduction</a>
+            </li>
+            <li>
+              <a href="etude-technique.html" class="tab-link"
+                >Étude technique</a
+              >
+            </li>
+            <li class="tab-dropdown">
+              <a href="choix-technique.html" class="tab-link"
+                >Choix technique
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="choix-technique.html" class="dropdown-item"
+                    >Choix technique</a
+                  >
+                </li>
+                <li>
+                  <a href="choix-technique-mecanique.html" class="dropdown-item"
+                    >Choix mécanique</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="choix-technique-electrique.html"
+                    class="dropdown-item"
+                    >Choix électronique</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="tab-dropdown">
+              <a href="conception-globale.html" class="tab-link active"
+                >Conception globale
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="conception-globale.html" class="dropdown-item"
+                    >Conception globale</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="conception-mecanique.html"
+                    class="dropdown-item active"
+                    >Conception mécanique</a
+                  >
+                </li>
+                <li>
+                  <a href="conception-electrique.html" class="dropdown-item"
+                    >Conception électronique</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+            <li><a href="video.html" class="tab-link">Conclusion</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Basculer le mode sombre"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <div class="page-content">
+        <div class="page-header reveal">
+          <div class="page-tag">Mécanique</div>
+          <h1>Conception mécanique</h1>
+        </div>
+
+        <!-- Support moteur : image 3D + vidéo gauche, texte droite -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=4a16ed69ab4cbdc5e629644e&wvm=v&wvmid=ee4147347998120c9b08cf73&eid=9a8b6a67ef16d90d3d1d2d13&elementType=PARTSTUDIO"
+              title="Support moteur 3D"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support moteur</h2>
+            <p>
+Les supports moteurs, positionnés aux quatre coins de la machine, font office de véritables piliers pour l'ensemble de la structure. 
+Ils assurent deux fonctions mécaniques majeures. D'une part, ils enveloppent et protègent les moteurs tout en maintenant les axes rectifiés parfaitement parallèles, une condition indispensable pour garantir la géométrie et la précision des dessins. 
+D'autre part, ils servent de points d'appui rigides pour les roulements, ce qui permet de maintenir les courroies parfaitement tendues et alignées.
+ Dans sa version finale, cette pièce remplit pleinement son rôle et assure la stabilité des fondations de notre structure XY.
+            </p>
+          </div>
+        </div>
+
+        <!-- Support axe rectifié : texte gauche, image 3D + vidéo droite -->
+        <div class="alt-row reverse reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=3e2e3ecc09bd52b9bd06e354&eid=56d7f13b332f2a05028b26ba&elementType=PARTSTUDIO"
+              title="Support axe 3D"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support axe rectifié</h2>
+            <p>
+Placés sur les axes rectifiés principaux et soutenus par les supports moteurs, ces supports d'axes jouent un double rôle stratégique dans le guidage de la machine. En premier lieu, ils assurent le maintien en position des axes du milieu, définissant ainsi la seconde dimension de notre espace de travail XY. En second lieu, ils participent directement au déplacement du support de stylo en intégrant les passages de courroies et les roulements de guidage.
+
+Pour optimiser le cheminement des courroies et éviter toute friction, la pièce intègre une dissymétrie calculée, avec un roulement surélevé par rapport à l'autre. La rigidité et la bonne tenue des axes centraux sont quant à elles sécurisées par l'utilisation d'inserts filetés robustes. Enfin, cette pièce a été conçue de manière symétrique (pièce miroir) pour équiper les deux côtés de la structure, offrant un système final parfaitement fonctionnel et stable.
+            </p>
+          </div>
+        </div>
+
+        <!-- Support stylo : image 3D + vidéo gauche, texte droite -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=7e4e0d4971ff87f573a553c3&eid=11b5efb1bdde184dbeb146ec&elementType=ASSEMBLY"
+              title="Support stylo partie 1"
+              loading="lazy"
+            ></iframe>
+
+
+
+          </div>
+          <div class="alt-text">
+            <h2>Support stylo</h2>
+            <p>
+Le support de stylo est décomposé en trois parties distinctes et complémentaires. Deux d'entre elles ont été spécifiquement modélisées pour épouser la forme des axes rectifiés centraux de la machine,
+ garantissant ainsi un guidage fluide et sans jeu lors des déplacements. 
+ La troisième partie gère le mécanisme vertical de levée et de descente du stylo. 
+ Ce mouvement est motorisé par un servomoteur, solidement maintenu par le support, qui actionne un système de rail et d'engrenage . 
+ Cet ensemble mécanique permet de contrôler avec précision les phases d'écriture et de déplacement à vide, rendant le module de traçage parfaitement opérationnel.
+            </p>
+          </div>
+        </div>
+
+        <!-- Support switch : texte gauche, image 3D + vidéo droite -->
+        <div class="alt-row reverse reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=4a16ed69ab4cbdc5e629644e&wvm=v&wvmid=1e89b52ccccf9dc121906239&eid=0052a34313348825be581f0b&elementType=PARTSTUDIO"
+              title="Support switch 3D"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support switch</h2>
+            <p>
+Les switchs sont installés sur des supports spécifiques, conçus sur mesure pour assurer une fixation stable, précise et durable. Ces supports garantissent le maintien rigide des capteurs dans leur alignement optimal, évitant ainsi tout déréglage mécanique lié aux vibrations. Cette configuration sécurise le fonctionnement du système de détection de position, permettant à la machine de valider ses origines (homing) et d'arrêter les axes en toute sécurité lors des déplacements.
+          </div>
+        </div>
+
+        <!-- Support planche : image 3D + photos gauche, texte droite -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=4a16ed69ab4cbdc5e629644e&wvm=v&wvmid=bbf8c29fb6a4b946ddacf6ee&eid=50527a9852a46d55ebef8019&elementType=PARTSTUDIO"
+              title="Support planche "
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support planche</h2>
+            <p>
+Le support de planche est constitué d'une plaque en bois découpée au laser, dont les dimensions ont été définies à partir d'une feuille A4 standard.
+ Ce composant intervient directement dans l'espace de travail pour combler les perçages présents sur le châssis et offrir une surface plane de traçage.
+
+La fixation et le maintien rigide de cette planche sur le cadre sont assurés par des pièces de support spécifiques traversées par des vis.
+ Ces fixations ont été conçues en forme de coin  afin de bloquer fermement la planche en bois, tout en ménageant un jour assez fin.
+  Cet interstice calibré permet de glisser et de positionner facilement la feuille A4 tout en la maintenant parfaitement en place lors des opérations de dessin.
+            </p>
+          </div>
+        </div>
+
+        <!-- Support BAU : texte gauche, image 3D + photo droite -->
+        <div class="alt-row reverse reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=f4cbb1edacdfa160ae11805c&eid=6d5051c5935f996acf43b991&elementType=ASSEMBLY"
+              title="Support planche 3D"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support BAU</h2>
+            <p>Le support du bouton d'arrêt d'urgence (BAU) a été spécifiquement dimensionné à partir des cotes réelles du composant pour garantir une intégration parfaite.
+               Il intègre des perçages dédiés pour assurer le passage et la distribution propre des différents câbles électriques vers le reste de la structure. 
+               Ce support a été conçu pour être installé lors de la mise en place de notre carte électronique ESP32, l'objectif initial étant de centraliser les éléments de commande et de sécurité sur le châssis de la machine.</p>
+          </div>
+        </div>
+
+        <!-- Support carte : image 3D + photo gauche, texte droite -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <iframe
+              src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=022b427707dd7ff8aabdb6b9&eid=980bf5ff47ec645c9250dca1&elementType=PARTSTUDIO"
+              title="Support carte électronique 3D"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="alt-text">
+            <h2>Support carte électronique</h2>
+            <p>Le support de la carte électrique a été conçu spécifiquement pour accueillir et sécuriser l'ensemble du montage électronique, incluant la carte de commande et l'ESP32.
+               En plus de servir de base de fixation rigide sur le châssis, cette pièce intègre des passages dédiés pour organiser proprement la distribution et le routage de l'ensemble des câbles vers les différents actionneurs de la machine.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>
+        Projet Machines That Draw — MakerSpace UniLaSalle Amiens — 2025/2026
+      </p>
+    </footer>
+<script src="js/common.js"></script>
+  </body>
+</html>

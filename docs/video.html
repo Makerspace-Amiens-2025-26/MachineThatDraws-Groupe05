@@ -1,51 +1,299 @@
-<!DOCTYPE html>
-<html lang="fr" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vidéos de présentation — MTDG5</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<a href="#main" class="skip-link">Aller au contenu</a>
-<header class="site-header" id="site-header">
-  <div class="header-inner">
-    <a href="home.html" class="site-logo">
-      <div class="logo-mark"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9 L9 2 L16 9 L9 16 Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="9" r="2.5" fill="white"/></svg></div>
-      <div><div class="logo-text">MTDG5</div><div class="logo-sub">Machines That Draw</div></div>
-    </a>
-    <nav class="tab-menu" id="tab-menu" role="navigation">
-      <a href="home.html" class="tab-link">Home</a>
-      <a href="introduction.html" class="tab-link">Introduction</a>
-      <a href="etude technique.html" class="tab-link">Etudes techniques</a>
-      <a href="concep.html" class="tab-link">Conception</a>
-      <a href="fab.html" class="tab-link">Fabrication</a>
-      <a href="elec.html" class="tab-link">Électronique</a>
-      <a href="video.html" class="tab-link">Vidéo</a>
-    </nav>
-    <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="tab-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-  </div>
-</header>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Conclusion — MTDG5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <div class="logo-mark">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div>
+            <div class="logo-text">MTDG5</div>
+            <div class="logo-sub">Machines That Draw</div>
+          </div>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="tab-menu" id="tab-menu">
+            <li><a href="index.html" class="tab-link">Accueil</a></li>
+            <li>
+              <a href="introduction.html" class="tab-link">Introduction</a>
+            </li>
+            <li>
+              <a href="etude-technique.html" class="tab-link"
+                >Étude technique</a
+              >
+            </li>
+            <li class="tab-dropdown">
+              <a href="choix-technique.html" class="tab-link"
+                >Choix technique
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="choix-technique.html" class="dropdown-item"
+                    >Choix technique</a
+                  >
+                </li>
+                <li>
+                  <a href="choix-technique-mecanique.html" class="dropdown-item"
+                    >Choix mécanique</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="choix-technique-electrique.html"
+                    class="dropdown-item"
+                    >Choix électronique</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="tab-dropdown">
+              <a href="conception-globale.html" class="tab-link"
+                >Conception globale
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="conception-globale.html" class="dropdown-item"
+                    >Conception globale</a
+                  >
+                </li>
+                <li>
+                  <a href="conception-mecanique.html" class="dropdown-item"
+                    >Conception mécanique</a
+                  >
+                </li>
+                <li>
+                  <a href="conception-electrique.html" class="dropdown-item"
+                    >Conception électronique</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+            <li><a href="video.html" class="tab-link active">Conclusion</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Basculer le mode sombre"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <div class="page-content2">
+        <div class="page-header reveal">
+          <div class="page-tag">Bilan</div>
+          <h1>Conclusion</h1>
+        </div>
 
-<main id="main" class="page-content">
-  <div class="page-header reveal">
-    <div class="page-tag">Démonstration</div>
-    <h1>Vidéos de présentation</h1>
-  </div>
+        <div class="section-block reveal">
+          <h2>Conseil sur la machine</h2>
+          <p>
+            Notre machine comporte plusieurs éléments mobiles laissés à nu,
+            notamment les rails en acier, les chariots imprimés en 3D et les
+            poulies métalliques crantées réparties aux quatre coins. Lors des
+            déplacements rapides de l'axe central, les courroies subissent de
+            fortes tensions pour s'enrouler autour des poulies des moteurs.
+          </p>
+          <p>
+            En raison de ces mouvements, il est strictement interdit d'approcher
+            ses mains de la machine lorsqu'elle est en fonctionnement. Les moteurs pas-à-pas développant un couple important, le
+            moindre coincement d'un doigt ou d'un tissu entre une courroie et
+            une poulie entraînera un pincement douloureux. 
+          </p>
+        </div>
 
-  <div class="section-block reveal">
-    <p>Veuillez retrouver nos vidéos de présentation ci-dessous.</p>
+        <div class="section-block reveal">
+          <h2>Réponse à notre cahier des charges</h2>
+          <p>
+            En conclusion, nous avons conçu et fabriqué une machine à dessiner
+            complète, fonctionnelle et pleinement opérationnelle. Sur le plan
+            mécanique, chaque pièce modélisée et imprimée en 3D répond
+            parfaitement aux exigences techniques fixées pour l'assemblage du
+            châssis.
+          </p>
+          <p>
+            Côté logiciel, la chaîne numérique mise en place s'avère très
+            efficace : elle permet d'importer n'importe quelle image, de la
+            vectoriser, puis de la traduire fidèlement en G-code afin de
+            transmettre les ordres de déplacement à la machine.
+          </p>
+          <p>
+            La confrontation avec nos objectifs initiaux confirme la réussite de
+            ce projet, malgré quelques ajustements de calendrier. Notre premier
+            jalon de décembre 2025, qui visait à obtenir un tracé stable sur un
+            format A4, a été parfaitement validé. De même, l'objectif d'avril
+            2025 concernant la reproduction du logo d'UniLaSalle sur format A4
+            est atteint. De même, l'objectif d'avril 2025 concernant la
+            reproduction du logo d'UniLaSalle sur format A4 est atteint.
+          </p>
+          <p>
+            Toutefois, nous souhaitions initialement réaliser ce logo en moins
+            de 30 minutes ; la vitesse d'exécution actuelle reste perfectible et
+            constituera un axe d'amélioration majeur pour une future version de
+            la machine. Concernant la précision de guidage, le critère de 0,5 mm
+            est lui aussi validé, l'intégralité de nos tracés ayant respecté
+            cette tolérance.
+          </p>
+          <p>
+            Le seul point de frustration de ce projet réside dans la partie
+            électronique. Nous avons réussi à concevoir notre propre carte de
+            commande autour d'un microcontrôleur ESP32, un choix technique qui
+            devait nous offrir plus de flexibilité qu'un CNC Shield standard et
+            nous permettre d'intégrer facilement les capteurs de fin de course
+            ainsi qu'un bouton d'arrêt d'urgence (BAU).
+          </p>
+          <p>
+            Malheureusement, l'oubli d'un bornier de connexion lors du routage
+            de la carte a empêché le raccordement physique du bouton de
+            sécurité. Malgré ce contretemps, lors de la présentation finale du
+            projet ce 3 juin 2026, la machine s'est montrée totalement
+            opérationnelle.
+          </p>
+          <p>
+            Ces légers imprévus n'ont en rien bloqué sa mise en route ni altéré
+            sa capacité à réaliser des dessins complexes et conformes aux
+            demandes du cahier des charges.
+          </p>
+        </div>
 
-    <!-- Conteneur vidéo pleine largeur centré -->
-    <div class="video-container">
-      <video src="images/video.mp4" controls title="Vidéo présentation MTDG5">
-      </video>
-    </div>
-  </div>
-</main>
-
-<footer class="site-footer"><p>MTDG5 — Projet Machines That Draw · MakerSpace UniLaSalle Amiens · 2025–2026</p></footer>
+        <div class="section-block reveal">
+          <h2>Difficultés rencontrées en électronique</h2>
+          <p>
+            Plusieurs difficultés ont été rencontrées lors de la réalisation.
+            D'abord, la densité du routage autour de l'ESP32‑S3 et des
+            connecteurs a conduit à des compromis sur les longueurs et les
+            angles de certaines pistes, avec un risque accru de couplage entre
+            signaux de puissance et signaux logiques.
+          </p>
+          <p>
+            Ensuite, le brasage manuel des composants CMS serrés a demandé une
+            grande vigilance pour éviter les courts‑circuits. Le format global
+            de la carte est resté relativement important par rapport au nombre
+            de fonctions intégrées. Une optimisation plus poussée de
+            l’implantation (regroupement plus serré des sous‑blocs,
+            repositionnement des connecteurs) aurait permis de réduire
+            l’encombrement et les longueurs de certaines pistes d’alimentation.
+            La taille actuelle reste fonctionnelle, mais non optimisée pour une
+            éventuelle industrialisation ou une intégration mécanique très
+            contrainte.
+          </p>
+          <p>
+            Par ailleurs, les largeurs de pistes d’alimentation ont été
+            surdimensionnées sur plusieurs segments (12 V principal, retours de
+            masse moteurs) par rapport aux courants réellement mesurés. Ce choix
+            améliore la marge thermique et la robustesse, mais se fait au
+            détriment de la compacité et laisse peu de place pour un éventuel
+            ajout de fonctions. Une optimisation ultérieure pourrait affiner ces
+            largeurs à partir des courants réels de la machine.
+          </p>
+          <p>
+            Enfin, le brasage manuel des composants CMS dans des zones denses
+            (ESP32‑S3, drivers, lecteur SD) a constitué un point délicat :
+            risque de ponts de soudure, accessibilité limitée entre les broches
+            et nécessité de multiples contrôles visuels. Pour une version
+            ultérieure, le recours à assemblage industriel permettrait
+            d’améliorer la répétabilité (stabilité non altérée par des
+            potentiels erreurs de brasage et donc machine qui répond toujours de
+            la même façon au mm prés lorsque l’instruction est identique) et de
+            réduire le temps de production.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>
+        Projet Machines That Draw — MakerSpace UniLaSalle Amiens — 2025/2026
+      </p>
+    </footer>
 <script src="js/common.js"></script>
-</body>
+  </body>
 </html>

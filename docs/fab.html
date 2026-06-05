@@ -1,83 +1,134 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Étapes de fabrication — MTDG5</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Logiciel — MTDG5</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Aller au contenu</a>
-<header class="site-header" id="site-header">
-  <div class="header-inner">
-    <a href="home.html" class="site-logo">
-      <div class="logo-mark"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9 L9 2 L16 9 L9 16 Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="9" r="2.5" fill="white"/></svg></div>
-      <div><div class="logo-text">MTDG5</div><div class="logo-sub">Machines That Draw</div></div>
-    </a>
-    <nav class="tab-menu" id="tab-menu" role="navigation">
-      <a href="home.html" class="tab-link">Home</a>
-      <a href="introduction.html" class="tab-link">Introduction</a>
-      <a href="etude technique.html" class="tab-link">Etudes techniques</a>
-      <a href="concep.html" class="tab-link">Conception</a>
-      <a href="fab.html" class="tab-link">Fabrication</a>
-      <a href="elec.html" class="tab-link">Électronique</a>
-      <a href="video.html" class="tab-link">Vidéo</a>
-    </nav>class="theme-toggle" data-theme-toggle aria-label="Basculer le thème"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="tab-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div><div class="logo-text">MTDG5</div><div class="logo-sub">Machines That Draw</div></div>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="tab-menu" id="tab-menu">
+          <li><a href="index.html" class="tab-link">Accueil</a></li>
+          <li><a href="introduction.html" class="tab-link">Introduction</a></li>
+          <li><a href="etude-technique.html" class="tab-link">Étude technique</a></li>
+          <li class="tab-dropdown">
+            <a href="choix-technique.html" class="tab-link">Choix technique <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="choix-technique.html" class="dropdown-item">Choix technique</a></li>
+              <li><a href="choix-technique-mecanique.html" class="dropdown-item">Choix mécanique</a></li>
+              <li><a href="choix-technique-electrique.html" class="dropdown-item">Choix électronique</a></li>
+            </ul>
+          </li>
+          <li class="tab-dropdown">
+            <a href="conception-globale.html" class="tab-link">Conception globale <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="conception-globale.html" class="dropdown-item">Conception globale</a></li>
+              <li><a href="conception-mecanique.html" class="dropdown-item">Conception mécanique</a></li>
+              <li><a href="conception-electrique.html" class="dropdown-item">Conception électronique</a></li>
+            </ul>
+          </li>
+          <li><a href="fab.html" class="tab-link  active">Logiciel</a></li>
+          <li><a href="video.html" class="tab-link">Conclusion</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le mode sombre"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </header>
+  <main id="main">
+    <div class="page-content">
+      <div class="page-header reveal">
+        <div class="page-tag">Programmation</div>
+        <h1>Logiciel</h1>
+      </div>
 
-<main id="main" class="page-content">
-  <div class="page-header reveal">
-    <div class="page-tag">Fabrication · Assemblage</div>
-    <h1>Étapes de fabrication</h1>
-  </div>
+      <!-- GRBL : image gauche, texte droite -->
+      <div class="alt-row reveal">
+        <div class="alt-media">
+          <img src="images/pro.png" alt="Configuration GRBL" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <p>La première étape de notre travail a consisté à configurer le système de commande de la machine en téléversant le micrologiciel GRBL dans la mémoire de la carte Arduino. Ce logiciel open-source fait office de traducteur pour convertir les fichiers de dessin en signaux électriques pour les moteurs.</p>
+          <p>Afin que le programme s'adapte parfaitement à la cinématique spécifique de notre prototype, nous avons modifié le fichier de configuration source (config.h). Cette manipulation nous a permis d'activer manuellement la fonction CoreXY, une ligne de code indispensable pour que le logiciel comprenne et gère correctement les déplacements synchronisés de notre réseau de courroies croisées.</p>
+        </div>
+      </div>
 
-  <div class="section-block reveal">
-    <h1>Procédure de préparation</h1>
-    <p>Pour mener à bien ce projet, nous avons débuté par une répartition claire des tâches au sein de l'équipe. Notre démarche a commencé par une phase de recherche sur les différents types de machines existantes. Une fois les premières pièces imprimées en 3D grâce à Onshape, nous avons immédiatement procédé à des tests réels. Ces essais nous ont permis d'obtenir des retours concrets et d'ajuster les modèles 3D selon nos besoins techniques. En parallèle, nous avons développé un code fonctionnel, validé la cinématique du système sur Onshape, puis mené les tests de fonctionnalité finaux directement sur la machine assemblée.</p>
-  </div>
+      <!-- Inkscape vectorisation : texte gauche, image droite -->
+      <div class="alt-row reverse reveal">
+        <div class="alt-media">
+          <img src="images/importer.png" alt="Inkscape - vectorisation" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <p>La seconde phase du projet repose sur l'utilisation du logiciel Inkscape. Cet outil de dessin vectoriel est indispensable pour convertir une image classique en un tracé numérique, appelé G-Code, qui sera ensuite interprété par la machine.</p>
+          <p>Pour commencer, nous avons configuré les propriétés du document en définissant une zone de travail carrée de 190 mm de côté. Ce dimensionnement strict a été choisi pour correspondre parfaitement à la zone utile de notre support en bois et garantir que le stylo ne dépasse jamais l'espace réel de la feuille A4.</p>
+          <p>Une fois cette zone délimitée, nous intégrons le dessin à réaliser en utilisant la fonction d'importation, accessible directement depuis le bouton bleu "Importer" de l'interface. Cet outil nous permet de charger l'image d'origine pour commencer son traitement de vectorisation.</p>
+        </div>
+      </div>
 
-  <div class="section-block reveal">
-    <h1>Conseils de sécurité</h1>
-    <p>La phase de fabrication au MakerSpace a nécessité le respect strict de plusieurs règles de sécurité, en particulier lors de l'utilisation des machines-outils. Pour l'impression 3D, notre vigilance s'est concentrée sur deux points. D'abord, le risque de brûlure thermique lors du préchauffage des buses. Ensuite, la surveillance de la première couche : une mauvaise adhérence initiale peut détacher la pièce et provoquer des collisions mécaniques ou endommager l'imprimante.
+      <!-- Commandes servo G-code : image gauche, texte droite -->
+      <div class="alt-row reveal">
+        <div class="alt-media">
+          <img src="images/para.png" alt="Commandes G-code servo" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <p>Pour générer le tracé final, nous avons utilisé l'extension intégrée Gcodetools. Cette étape permet d'abord de créer les points d'orientation du dessin afin de définir précisément l'emplacement de l'origine (le point zéro) sur notre feuille. </p>
+          <p>C'est également à ce moment que nous configurons les commandes spécifiques à la gestion verticale du stylo via le servomoteur. Nous injectons ainsi la commande M3 S85 pour abaisser et plaquer le stylo sur la feuille lors des phases d'écriture, et la commande M3 S100 pour le lever lors des déplacements à vide.</p>
+          <p>Enfin, cette interface nous permet d'observer et d'ajuster finement la vitesse de déplacement du stylo, un paramètre crucial pour garantir la régularité et la netteté du tracé sur le papier.</p>
+        </div>
+      </div>
 
-Concernant la découpe laser, le niveau de risque est supérieur et impose une surveillance continue. En raison des risques d’incendie liés à la combustion du bois, un membre de l'équipe est resté impérativement devant la machine pour pouvoir actionner l'arrêt d'urgence au moindre problème.
-</p>
-  </div>
 
-  <div class="section-block reveal">
-    <h1>Étapes d'assemblage</h1>
-    <p> Une fois la phase de fabrication achevée, nous avons procédé au montage réel de la machine en suivant le modèle d'assemblage conçu sur Onshape. La première étape a consisté à fixer les moteurs pas-à-pas sur leurs supports à l'aide de vis M3. Nous avons ajouté des rondelles de calage au niveau des fixations pour aligner parfaitement le passage des courroies.
+        <!-- UGS : texte gauche, image droite -->
+            <div class="alt-row reverse reveal">
+        <div class="alt-media">
+          <img src="images/nom.png" alt="Universal Gcode Sender" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <p>Pour finaliser la création du fichier, nous retournons dans l'extension Gcodetools et sélectionnons l'option "Chemin vers G-code". Cette commande nous permet de nommer le fichier final selon nos besoins et d'exporter définitivement le script de tracé. Une fois ce fichier exporté, nous pouvons passer à l'étape suivante en ouvrant le logiciel Universal Gcode Sender (UGS), qui servira d'interface de pilotage pour envoyer le programme directement à la machine.</p>
+        </div>
+      </div>
 
-Ensuite, nous avons installé les supports et les tiges métalliques qui servent de rails pour guider la machine. Lors de cette opération, nous avons veillé avec une grande rigueur à ce que les supports soient parfaitement alignés avec les trous du châssis et l'axe des moteurs. Cet alignement est indispensable pour éviter que les tiges ne se coincent ou ne bloquent lorsque le chariot central et le mécanisme du stylo se déplacent. Pour finaliser la partie mécanique, nous avons monté les pignons directement sur la sortie des moteurs et inséré les poulies sur les supports de tiges. Cet ensemble permet aux courroies de tourner de manière fluide et de régler leur tension pour garantir la précision du tracé.
+      <!-- UGS : texte gauche, image droite -->
+      <div class="alt-row reverse reveal">
+        <div class="alt-media">
+          <img src="images/Uni.png" alt="Universal Gcode Sender" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <p>La dernière étape consiste à utiliser le logiciel Universal Gcode Sender (UGS) pour piloter notre machine XY. Pour établir la communication, nous cliquons d'abord sur le bouton "Connect", puis nous appuyons sur le bouton "Unlock" afin de déverrouiller la machine.</p>
+          <p>Une fois la connexion établie, nous déplaçons manuellement le chariot pour placer physiquement le stylo au point d'origine (0,0), c'est-à-dire tout en bas à gauche de la feuille de papier. Nous cliquons ensuite sur "Reset Zero" pour définir ce point comme l'origine de notre repère de travail.</p>
+          <p>Enfin, il ne reste plus qu'à charger notre dessin en cliquant sur "Open" pour sélectionner le fichier .nc généré précédemment sur Inkscape. Le logiciel affiche alors l'aperçu du tracé, confirmant que le programme est prêt à être envoyé à la machine.</p>
+        </div>
+      </div>
 
-Parallèlement, la sécurité et l'organisation des composants électroniques ont été intégrées à la structure. Un bouton d'arrêt d'urgence a été installé pour couper instantanément l'alimentation en cas de problème. Après avoir assemblé et soudé les composants de notre carte de commande, nous l'avons fixée sur le châssis. Afin de protéger l'électronique et de bien ranger les fils (cable management), nous avons conçu un boîtier de protection sur mesure. Cette configuration évite que les fils ne s'emmêlent ou ne gênent les éléments mobiles de la machine. Enfin, la carte et le bouton d'arrêt d'urgence ont été solidement fixés au châssis avec des vis M3.
+      <!-- Résultat final : image gauche, texte droite -->
+      <div class="alt-row reveal">
+        <div class="alt-media">
+          <img src="images/logo.png" alt="Logo UniLaSalle tracé par la machine" loading="lazy">
+        </div>
+        <div class="alt-text">
+          <h2>Résultat final</h2>
+          <p>Une fois le fichier chargé dans UGS, l'aperçu du dessin ici le logo d'UniLaSalle  apparaît à l'écran, parfaitement positionné selon nos axes XY. Après une dernière vérification visuelle de la trajectoire, il suffit d'appuyer sur le bouton "Envoyer" (Send) pour lancer définitivement le tracé et voir les moteurs s'activer en parfaite synchronisation.</p>
+          <p>La machine exécute alors les mouvements de manière fluide, gérant automatiquement les levées et les poses de stylo pour reproduire fidèlement l'image vectorisée. Voici quelques exemples de nos créations qui viennent valider l'ensemble de notre travail de conception mécanique et électronique.</p>
+        </div>
+      </div>
 
-</p>
-  </div>
-
-  <div class="section-block reveal">
-    <h1>Programmation</h1>
-    <p>Pour donner vie à notre machine, nous avons structuré notre démarche autour de trois outils principaux. La première étape a consisté à configurer le cerveau de la machine en injectant le firmware GRBL dans notre carte Arduino. Afin que le logiciel comprenne l'architecture à courroies croisées de notre système, nous avons ouvert le fichier <code>config.h</code> pour y activer la fonction CoreXY. De plus, pour contourner un défaut technique sur notre carte CNC Shield, nous avons modifié le fichier <code>cpu_map.h</code> afin de réassigner manuellement les broches.</p>
-    <p>La deuxième étape s'est déroulée sur Inkscape pour la préparation graphique. Après avoir nettoyé le dessin en transformant chaque objet en chemin, nous avons utilisé l'extension Gcodetools pour générer le tracé. C'est à ce moment que nous avons intégré les commandes spécifiques pour la gestion verticale du stylo : <code>M3 S100</code> pour plaquer le stylo sur la feuille et <code>M3 S120</code> pour le lever lors des déplacements à vide.</p>
-    <p>Enfin, la dernière étape a pris place sur Universal Gcode Sender (UGS). Ce logiciel nous permet de connecter la machine à l'ordinateur et d'importer le fichier G-code généré. Après un calibrage final, il suffit de positionner manuellement le stylo en bas à gauche de la feuille, de définir ce point comme l'origine en cliquant sur "Reset Zero", puis de lancer le tracé automatisé.</p>
-  </div>
-
-  <div class="section-block reveal">
-    <h1>Vérifications réalisées</h1>
-    <p>Pour valider le montage et préparer les premiers tests en toute sécurité, nous avons suivi une série de vérifications simples. D'abord, nous avons mesuré l'équerrage des axes pour vérifier qu'ils étaient bien perpendiculaires. C'est une étape essentielle pour que les dessins ne soient pas déformés plus tard. Nous avons aussi contrôlé l'alignement entre les pièces imprimées en 3D et les trous du châssis pour être sûrs que rien ne force lors du vissage.
-    Ensuite, nous avons testé le mouvement de la machine à la main. En déplaçant le chariot central sur toute la surface de la feuille A4, nous avons vérifié que le glissement était fluide et que les tiges ne bloquaient nulle part. Pour finir, nous avons réglé la tension des courroies et bien rangé les fils électriques. Cela permet de garantir qu'aucun câble ne va s'emmêler ou gêner les mouvements de la machine avant de l'allumer.</p>
-  </div>
-
-  <div class="section-block reveal">
-    <h1>Solutions apportées</h1>
-    <p>Au cours de l'assemblage et des premiers tests, nous avons optimisé plusieurs composants pour fiabiliser la machine. Concernant le support moteur, nous avons ajusté la longueur des tubes de maintien afin d'éliminer les vibrations. Sur le support non moteur, nous avons stabilisé les axes des courroies avec des cales en bois, avant de réduire le diamètre des perçages au strict minimum pour offrir une meilleure assise aux poulies.</p>
-    <p>Le support de tige a lui aussi été revu : nous avons réduit ses dimensions globales et ajouté des éléments élévateurs pour aligner parfaitement les courroies. Pour le support de crayon, une augmentation de l'épaisseur de la pièce a permis de solidifier le serrage des vis. Enfin, nous avons entièrement repensé la pince en séparant la fonction de support et celle de fixation, tout en intégrant des clips sur mesure parfaitement adaptés au diamètre du stylo.</p>
-  </div>
-</main>
-
-<footer class="site-footer"><p>MTDG5 — Projet Machines That Draw · MakerSpace UniLaSalle Amiens · 2025–2026</p></footer>
+      <div class="section-block reveal">
+        <h2>Exemples de tracés</h2>
+        <div class="project-image" style="margin-top:var(--space-4)">
+          <img src="images/paris.jpg" alt="Tracé 1" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><p>Projet Machines That Draw — MakerSpace UniLaSalle Amiens — 2025/2026</p></footer>
 <script src="js/common.js"></script>
 </body>
 </html>
