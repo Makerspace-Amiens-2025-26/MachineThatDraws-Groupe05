@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTDG5 — Documentation Projet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js?module","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div class="logo-text">MTDG5</div>
+          <div class="logo-sub">Machines That Draw</div>
+        </div>
+      </a>
+  <nav aria-label="Navigation principale">
+        <ul class="tab-menu" id="tab-menu">
+          <li><a href="index.html" class="tab-link  active">Accueil</a></li>
+          <li><a href="introduction.html" class="tab-link">Introduction</a></li>
+          <li><a href="etude-technique.html" class="tab-link">Étude technique</a></li>
+          <li class="tab-dropdown">
+            <a href="choix-technique.html" class="tab-link">Choix technique <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="choix-technique.html" class="dropdown-item">Choix technique</a></li>
+              <li><a href="choix-technique-mecanique.html" class="dropdown-item">Choix mécanique</a></li>
+              <li><a href="choix-technique-electrique.html" class="dropdown-item">Choix électronique</a></li>
+            </ul>
+          </li>
+          <li class="tab-dropdown">
+            <a href="conception-globale.html" class="tab-link">Conception globale <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="conception-globale.html" class="dropdown-item">Conception globale</a></li>
+              <li><a href="conception-mecanique.html" class="dropdown-item">Conception mécanique</a></li>
+              <li><a href="conception-electrique.html" class="dropdown-item">Conception électronique</a></li>
+            </ul>
+          </li>
+          <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+          <li><a href="video.html" class="tab-link">Conclusion</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le mode sombre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="welcome-section">
+    <div class="welcome-badge">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
+      MakerSpace · UniLaSalle Amiens
+    </div>
+    <h1>Documentation du Projet MTDG5</h1>
+    <p>Ce site regroupe toutes les informations nécessaires pour comprendre, utiliser et reproduire notre machine à dessiner automatisée.</p>
+  </section>
+
+  <!-- 3D Model -->
+  <div class="model-center">
+    <iframe
+      src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=ccf4257cba3741778cf93857&eid=16783db16ad761c2a92fa52e&elementType=ASSEMBLY" title="Support planche 3D" loading="lazy"></iframe>"
+  </iframe> 
+  </div>
+
+  <!-- Cards -->
+  <div class="page-content2" style="padding-top:0">
+    <div class="kiosk-grid">
+      <div class="kiosk-card reveal">
+        <h2>À propos du projet</h2>
+        <p>Réalisé au sein du MakerSpace, le projet "Machines That Draw" consiste à concevoir et fabriquer intégralement une machine de dessin automatisée. L'objectif est de nous confronter aux réalités concrètes de l'ingénierie : à partir d'un châssis de base et de contraintes initiales, nous devons développer nos propres solutions techniques. Le projet repose sur la synchronisation de trois compétences déjà acquises : Mécanique (Onshape), Électronique (KiCad) et Informatique & Automatisme.</p>
+      </div>
+      <div class="kiosk-card reveal">
+        <h2>Contexte du projet</h2>
+        <p>Le projet Machines That Draw consiste à développer un système capable de traduire un code informatique en tracés graphiques sur format A4. En utilisant une structure motorisée, la machine pilote un stylo avec précision sur deux axes (X et Y) pour reproduire des dessins numériques. Ce projet nous permet de combiner différentes compétences techniques comme la mécanique, l'électronique et l'informatique.</p>
+      </div>
+      <div class="kiosk-card reveal">
+        <h2>Objectifs</h2>
+        <p>L'objectif de ce projet est de concevoir une machine de dessin automatisée opérant sur un format A4. Notre priorité est de développer une structure à la fois stable et cohérente avec les contraintes techniques du système, afin de garantir une précision de tracé optimale. Dans une démarche d'ingénierie, nous avons pensé l'architecture de la machine pour qu'elle soit évolutive.</p>
+      </div>
+      <div class="kiosk-card reveal">
+        <h2>Perspectives</h2>
+        <p>Dans un premier temps, notre objectif à court terme est d'aboutir, sous un délai d'un mois et demi, à une preuve de concept capable de réaliser un tracé élémentaire sur format A4. Une fois cette base validée, nous chercherons à optimiser le système pour allier vitesse d'exécution et précision graphique. Enfin, l'étape ultime consistera à augmenter la complexité des tracés réalisables.</p>
+      </div>
+      <div class="kiosk-card reveal">
+        <h2>Calendrier</h2>
+        <p>Ce projet a commencé le <strong>20 Novembre 2025</strong> et se terminera le <strong>3 juin 2026</strong>. L'équipe doit être prête pour la journée de présentation du 3 juin 2026.</p>
+      </div>
+      <div class="kiosk-card reveal">
+        <h2>Missions</h2>
+        <p>L'équipe doit produire un prototype fonctionnel capable de réaliser un tracé sur format A4, valider l'ensemble de la chaîne mécanique, électronique et logicielle, puis présenter le résultat lors de la journée du 3 juin 2026.</p>
+      </div>
+    </div>
+  </div>
+         <div class="videos-duo reveal">
+      <div class="video-item">
+        <video controls autoplay muted loop playsinline>
+          <source src="images/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <video controls muted loop playsinline>
+          <source src="images/MTD Groupe 5.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+  <p>MTDG5 — Projet Machines That Draw · MakerSpace UniLaSalle Amiens · 2025–2026</p>
+</footer>
+
+
+<script src="js/common.js"></script>
+</body>
+</html>
