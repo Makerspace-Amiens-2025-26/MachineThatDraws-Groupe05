@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Étude technique — MTDG5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <div class="logo-mark">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div>
+            <div class="logo-text">MTDG5</div>
+            <div class="logo-sub">Machines That Draw</div>
+          </div>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="tab-menu" id="tab-menu">
+            <li><a href="index.html" class="tab-link">Accueil</a></li>
+            <li>
+              <a href="introduction.html" class="tab-link">Introduction</a>
+            </li>
+            <li>
+              <a href="etude-technique.html" class="tab-link active"
+                >Étude technique</a
+              >
+            </li>
+            <li class="tab-dropdown">
+              <a href="choix-technique.html" class="tab-link"
+                >Choix technique
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="choix-technique.html" class="dropdown-item"
+                    >Choix technique</a
+                  >
+                </li>
+                <li>
+                  <a href="choix-technique-mecanique.html" class="dropdown-item"
+                    >Choix mécanique</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="choix-technique-electrique.html"
+                    class="dropdown-item"
+                    >Choix électronique</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="tab-dropdown">
+              <a href="conception-globale.html" class="tab-link"
+                >Conception globale
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  style="
+                    display: inline;
+                    vertical-align: middle;
+                    margin-left: 3px;
+                  "
+                >
+                  <path
+                    d="M2 4l4 4 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="conception-globale.html" class="dropdown-item"
+                    >Conception globale</a
+                  >
+                </li>
+                <li>
+                  <a href="conception-mecanique.html" class="dropdown-item"
+                    >Conception mécanique</a
+                  >
+                </li>
+                <li>
+                  <a href="conception-electrique.html" class="dropdown-item"
+                    >Conception électroniques</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+            <li><a href="video.html" class="tab-link">Conclusion</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Basculer le mode sombre"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <div class="page-content">
+        <div class="page-header reveal">
+          <div class="page-tag">Analyse</div>
+          <h1>Études techniques</h1>
+        </div>
+
+        <div class="section-block reveal">
+          <h2>Analyse des différentes machines proposées</h2>
+          <p>
+            Au début du projet, nous avons analysé différentes architectures de
+            machines à dessiner : les systèmes XY, les bras robotiques, les
+            machines polaires verticales. Notre réflexion s'est concentrée sur
+            trois solutions principales, chacune présentant des avantages et des
+            contraintes spécifiques.
+          </p>
+        </div>
+
+        <!-- Bras robotique : texte à droite, image à gauche -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <img src="images/bras.png" alt="Bras robotique" loading="lazy" />
+          </div>
+          <div class="alt-text">
+            <h2>Bras robotique</h2>
+            <p>
+              Le bras robotique se distingue par sa compacité au sol et sa
+              polyvalence, lui permettant de couvrir une zone de travail
+              circulaire étendue et d'atteindre des coordonnées complexes avec
+              une grande agilité.
+            </p>
+            <p>
+              Toutefois, sa mise en œuvre exige une gestion logicielle complexe.
+              Contrairement aux machines cartésiennes guidées par des courroies
+              rectilignes, le bras doit calculer de la trigonométrie en temps
+              réel pour traduire de simples lignes droites en angles de rotation
+              de ses moteurs.
+            </p>
+            <p>
+              De plus, il présente un manque de rigidité structurelle en
+              extrémité de bras dû à un fort effet de levier. Ce phénomène est
+              grandement amplifié par la flexibilité des matériaux imprimés en
+              3D. C'est d'ailleurs pour cela que nous avons décidé de ne pas
+              choisir cette machine. La complexité du code est beaucoup trop
+              élevée et nos profils au sein de l'équipe ne correspondent pas du
+              tout à ce genre de défi informatique.Programmer et calibrer une
+              cinématique inverse stable à partir de zéro représente un défi
+              informatique , qui expose le projet à un risque d'erreurs
+              logicielles permanent.
+            </p>
+          </div>
+        </div>
+
+        <!-- Machine polaire : texte à gauche, image à droite -->
+        <div class="alt-row reverse reveal">
+          <div class="alt-media">
+            <img
+              src="images/polaire.jpg"
+              alt="Machine polaire verticale"
+              loading="lazy"
+            />
+          </div>
+          <div class="alt-text">
+            <h2>Machine polaire verticale</h2>
+            <p>
+              La machine polaire verticale est une solution très ingénieuse et
+              très visuelle. Elle s'installe directement sur un mur ou un
+              tableau vertical. Son fonctionnement est simple : l'outil de
+              dessin est suspendu au milieu de deux fils (souvent des courroies)
+              reliés à deux moteurs fixés en haut de la surface. En tendant ou
+              en relâchant ces fils, la machine déplace le stylo. C'est une
+              option très pratique si on veut dessiner sur des surfaces
+              gigantesque sans avoir à fabriquer un châssis lourd.
+            </p>
+            <p>
+              Mécaniquement, la gravité est sa pire ennemie. Comme la tête de
+              dessin est juste suspendue, elle manque cruellement de rigidité.
+              Plus l'outil descend vers le bas ou s'approche des bords, plus les
+              fils se détendent et la précision s'effondre.
+            </p>
+            <p>
+              De plus, le stylo a tendance à osciller et à se balancer comme un
+              pendule lors des changements de direction rapides. C'est
+              d'ailleurs pour cela que nous avons décidé de ne pas choisir cette
+              machine. Les compromis sur la précision ne correspondent pas du
+              tout à nos attentes. Calibrer la tension des fils et coder la
+              géométrie polaire à partir de zéro demande une expertise
+              informatique et des heures de réglages qui nous auraient fait
+              perdre un temps précieux. Nous préférons rester sur une
+              cinématique cartésienne plus classique, bien plus fiable et
+              accessible pour nous. 
+            </p>
+          </div>
+        </div>
+
+        <!-- Machine XY : texte à droite, image à gauche -->
+        <div class="alt-row reveal">
+          <div class="alt-media">
+            <img src="images/xy.jpg" alt="Machine XY CoreXY" loading="lazy" />
+          </div>
+          <div class="alt-text">
+            <h2>Le choix de notre machine</h2>
+            <p>
+              Nous avons finalement opté pour la machine XY, une architecture
+              qui répond parfaitement à nos exigences de précision. Grâce à un
+              guidage par courroies élastiques, le système limite les vibrations
+              et garantit un tracé net, fidèle aux coordonnées numériques.
+            </p>
+            <p>
+              Ce choix est également stratégique sur le plan de la programmation
+              : la machine repose sur un système de coordonnées cartésiennes
+              accessible, nous permettant de nous concentrer sur la partie
+              mécanique plus complexe. Cette complexité mécanique n'a pas été un
+              frein pour notre équipe, bien au contraire. Composé de membres
+              passionnés par la conception et la mécanique, notre groupe a vu
+              dans cette machine l'opportunité de mettre à profit nos
+              compétences. Ce choix architectural s'est donc révélé être une
+              décision stratégique, parfaitement alignée avec nos forces et nos
+              intérêts techniques.
+            </p>
+          </div>
+        </div>
+
+        <div class="comparison-table-wrap section-block reveal">
+          <h2>Tableau comparatif des architectures</h2>
+          <img
+            src="images/tableau comparatif.png"
+            alt="Tableau comparatif des machines"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="section-block reveal">
+          <h2>Choix final</h2>
+          <p>
+            Après analyse de ces différentes technologies, nous avons choisi de
+            développer la machine CoreXY car elle offre le meilleur compromis
+            entre une précision de tracé parfait et un système de programmation
+            accessible.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>
+        Projet Machines That Draw — MakerSpace UniLaSalle Amiens — 2025/2026
+      </p>
+    </footer>
+<script src="js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Conception globale — MTDG5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div><div class="logo-text">MTDG5</div><div class="logo-sub">Machines That Draw</div></div>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="tab-menu" id="tab-menu">
+          <li><a href="index.html" class="tab-link">Accueil</a></li>
+          <li><a href="introduction.html" class="tab-link">Introduction</a></li>
+          <li><a href="etude-technique.html" class="tab-link">Étude technique</a></li>
+          <li class="tab-dropdown">
+            <a href="choix-technique.html" class="tab-link">Choix technique <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="choix-technique.html" class="dropdown-item">Choix technique</a></li>
+              <li><a href="choix-technique-mecanique.html" class="dropdown-item">Choix mécanique</a></li>
+              <li><a href="choix-technique-electrique.html" class="dropdown-item">Choix électronique</a></li>
+            </ul>
+          </li>
+          <li class="tab-dropdown">
+            <a href="conception-globale.html" class="tab-link  active">Conception globale <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-left:3px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="conception-globale.html" class="dropdown-item  active">Conception globale</a></li>
+              <li><a href="conception-mecanique.html" class="dropdown-item">Conception mécanique</a></li>
+              <li><a href="conception-electrique.html" class="dropdown-item">Conception électronique</a></li>
+            </ul>
+          </li>
+          <li><a href="fab.html" class="tab-link">Logiciel</a></li>
+          <li><a href="video.html" class="tab-link">Conclusion</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le mode sombre"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </header>
+  <main id="main">
+    <div class="page-content2">
+      <div class="page-header reveal">
+        <div class="page-tag">Architecture</div>
+        <h1>Conception globale</h1>
+      </div>
+
+      <div class="schema-block reveal">
+        <div class="model-center">
+    <iframe
+      src="https://modelembedder.net/embed?did=8e88441315a582e823210f2f&wvm=v&wvmid=ccf4257cba3741778cf93857&eid=16783db16ad761c2a92fa52e&elementType=ASSEMBLY" title="Support planche 3D" loading="lazy"></iframe>"
+  </iframe> 
+  </div>
+        <p style="margin-top:var(--space-6)">Le schéma ci-dessus présente l'assemblage complet de notre machine XY. On y distingue les quatre supports moteurs positionnés aux coins du châssis, les axes rectifiés transversaux et le chariot central porteur du stylo. L'emboitement des différentes pièces développées au cours du projet est visible dans sa globalité.</p>
+        <p>Cette vue d'ensemble permet de comprendre la cinématique CoreXY : les deux moteurs agissent simultanément sur le chariot central via un réseau de courroies croisées, permettant des déplacements précis sur les deux axes X et Y.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer class="site-footer"><p>Projet Machines That Draw — MakerSpace UniLaSalle Amiens — 2025/2026</p></footer>
+<script src="js/common.js"></script>
+</body>
+</html>
