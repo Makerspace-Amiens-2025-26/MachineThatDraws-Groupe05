@@ -443,7 +443,7 @@ a {
 }
 
 /* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
-/* ─── VIDEO HOME: côte à côte adapté au format ────────── */
+/* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
 .videos-duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -457,14 +457,13 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   background: var(--color-surface-2);
-  /* Suppression de l'aspect-ratio fixe pour laisser la vidéo respirer */
-  position: relative;
+  /* Suppression de l'aspect-ratio: 9/16 qui forçait un grand rectangle vertical */
 }
 .videos-duo .video-item video {
   width: 100%;
-  height: auto;          /* S'adapte à la vraie hauteur de la vidéo */
-  object-fit: contain;   /* Ne zoome plus dans l'image */
+  height: auto;          /* La hauteur s'adapte automatiquement à la vidéo */
   display: block;
+  object-fit: contain;
   border-radius: var(--radius-xl);
 }
 .videos-duo .video-item iframe {
@@ -472,6 +471,11 @@ a {
   height: 100%;
   border: none;
   display: block;
+}
+@media (max-width: 640px) {
+  .videos-duo {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 640px) {
   .videos-duo {
