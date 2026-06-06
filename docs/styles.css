@@ -443,6 +443,7 @@ a {
 }
 
 /* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
+/* ─── VIDEO HOME: côte à côte adapté au format ────────── */
 .videos-duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -456,20 +457,26 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   background: var(--color-surface-2);
-  /* Suppression de l'aspect-ratio: 9/16 qui forçait un grand rectangle vertical */
+  /* Suppression de l'aspect-ratio fixe pour laisser la vidéo respirer */
+  position: relative;
 }
 .videos-duo .video-item video {
-  width: auto;
-  height: auto;          /* Force la vidéo à prendre toute la hauteur du cadre */
-  object-fit: cover;     /* REMPLIT complètement l'espace sans laisser de vide */
+  width: 100%;
+  height: auto;          /* S'adapte à la vraie hauteur de la vidéo */
+  object-fit: contain;   /* Ne zoome plus dans l'image */
   display: block;
   border-radius: var(--radius-xl);
 }
 .videos-duo .video-item iframe {
   width: 100%;
-  height: 100%  ;
+  height: 100%;
   border: none;
   display: block;
+}
+@media (max-width: 640px) {
+  .videos-duo {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 640px) {
   .videos-duo {
