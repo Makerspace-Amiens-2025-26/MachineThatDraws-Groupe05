@@ -460,7 +460,7 @@ a {
 }
 .videos-duo .video-item video {
   width: 100%;
-  height: 100%;          /* Force la vidéo à prendre toute la hauteur du cadre */
+  height: 150%;          /* Force la vidéo à prendre toute la hauteur du cadre */
   object-fit: cover;     /* REMPLIT complètement l'espace sans laisser de vide */
   display: block;
   border-radius: var(--radius-xl);
