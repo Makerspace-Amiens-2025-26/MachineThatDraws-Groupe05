@@ -443,12 +443,13 @@ a {
 }
 
 /* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
+/* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
 .videos-duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
   margin: var(--space-8) auto;
-  max-width: 1000px !important;
+  max-width: 800px !important;
   padding: 0 var(--space-6);
 }
 .videos-duo .video-item {
@@ -467,8 +468,8 @@ a {
   border-radius: var(--radius-xl);
 }
 .videos-duo .video-item iframe {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border: none;
   display: block;
 }
