@@ -123,5 +123,52 @@
 
 
 <script src="js/common.js"></script>
+
+<!-- Video overlay portrait fullscreen -->
+<div id="video-overlay" style="display:none;position:fixed;inset:0;z-index:9999;background:#000;align-items:center;justify-content:center;">
+  <video id="overlay-video" controls playsinline style="height:95vh;width:auto;max-width:95vw;object-fit:contain;border-radius:0.5rem;"></video>
+  <button onclick="closeOverlay()" style="position:fixed;top:1rem;right:1rem;background:rgba(255,255,255,0.2);border:none;color:#fff;font-size:1.2rem;width:40px;height:40px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10000;">✕</button>
+</div>
+<script>
+function openOverlay(src, currentTime){
+  var ov=document.getElementById('video-overlay');
+  var vid=document.getElementById('overlay-video');
+  vid.src=src;
+  ov.style.display='flex';
+  vid.currentTime=currentTime||0;
+  vid.play();
+  document.body.style.overflow='hidden';
+}
+function closeOverlay(){
+  var ov=document.getElementById('video-overlay');
+  var vid=document.getElementById('overlay-video');
+  vid.pause(); vid.src='';
+  ov.style.display='none';
+  document.body.style.overflow='';
+}
+document.addEventListener('DOMContentLoaded',function(){
+  document.getElementById('video-overlay').addEventListener('click',function(e){
+    if(e.target===this) closeOverlay();
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeOverlay(); });
+
+  document.querySelectorAll('.video-item video').forEach(function(v){
+    // Intercepte le fullscreen natif
+    v.addEventListener('fullscreenchange',function(){
+      if(document.fullscreenElement===v){
+        document.exitFullscreen();
+        openOverlay(v.querySelector('source').src, v.currentTime);
+      }
+    });
+    v.addEventListener('webkitfullscreenchange',function(){
+      if(document.webkitFullscreenElement===v){
+        document.webkitExitFullscreen();
+        openOverlay(v.querySelector('source').src, v.currentTime);
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
