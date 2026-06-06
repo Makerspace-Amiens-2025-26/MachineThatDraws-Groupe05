@@ -443,6 +443,7 @@ a {
 }
 
 /* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
+/* ─── VIDEO HOME: côte à côte adapté au format ────────── */
 .videos-duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -456,13 +457,13 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   background: var(--color-surface-2);
-  aspect-ratio: 9/16;
+  /* Suppression de l'aspect-ratio fixe pour laisser la vidéo respirer */
   position: relative;
 }
 .videos-duo .video-item video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;          /* S'adapte à la vraie hauteur de la vidéo */
+  object-fit: contain;   /* Ne zoome plus dans l'image */
   display: block;
   border-radius: var(--radius-xl);
 }
