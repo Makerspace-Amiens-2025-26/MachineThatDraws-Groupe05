@@ -459,8 +459,8 @@ a {
   /* Suppression de l'aspect-ratio: 9/16 qui forçait un grand rectangle vertical */
 }
 .videos-duo .video-item video {
-  width: 100%;
-  height: 110%;          /* Force la vidéo à prendre toute la hauteur du cadre */
+  width: auto;
+  height: auto;          /* Force la vidéo à prendre toute la hauteur du cadre */
   object-fit: cover;     /* REMPLIT complètement l'espace sans laisser de vide */
   display: block;
   border-radius: var(--radius-xl);
