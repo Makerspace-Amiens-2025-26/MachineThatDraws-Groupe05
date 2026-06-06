@@ -443,7 +443,6 @@ a {
 }
 
 /* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
-/* ─── VIDEO HOME: côte à côte sans barres noires ────────── */
 .videos-duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -461,14 +460,14 @@ a {
 }
 .videos-duo .video-item video {
   width: 100%;
-  height: auto;          /* La hauteur s'adapte automatiquement à la vidéo */
+  height: 100%;          /* Force la vidéo à prendre toute la hauteur du cadre */
+  object-fit: cover;     /* REMPLIT complètement l'espace sans laisser de vide */
   display: block;
-  object-fit: contain;
   border-radius: var(--radius-xl);
 }
 .videos-duo .video-item iframe {
   width: 100%;
-  height: 100%;
+  height: 100%  ;
   border: none;
   display: block;
 }
