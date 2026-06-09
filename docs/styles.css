@@ -990,6 +990,21 @@ model-viewer {
   display: block;
 }
 
+.poster-wrap {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-8) auto;
+  padding: 0 var(--space-4);
+}
+
+.poster-image {
+  width: 100%;
+  max-width: 700px;
+  min-width: 260px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  object-fit: contain;
+}
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .tab-menu {
